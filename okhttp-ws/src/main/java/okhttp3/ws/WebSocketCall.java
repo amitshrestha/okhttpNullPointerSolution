@@ -115,7 +115,8 @@ public final class WebSocketCall {
 
   private void createWebSocket(Response response, WebSocketListener listener) throws IOException {
     if (response.code() != 101) {
-      Util.closeQuietly(response.body());
+      // comp530 My Change
+      // Util.closeQuietly(response.body());
       throw new ProtocolException("Expected HTTP 101 response but was '"
           + response.code()
           + " "

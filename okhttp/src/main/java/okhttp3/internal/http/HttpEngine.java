@@ -730,7 +730,8 @@ public final class HttpEngine {
         .header(OkHeaders.RECEIVED_MILLIS, Long.toString(System.currentTimeMillis()))
         .build();
 
-    if (!forWebSocket) {
+    // comp530 My Change
+    if (!forWebSocket || networkResponse.code() != 101) {
       networkResponse = networkResponse.newBuilder()
           .body(httpStream.openResponseBody(networkResponse))
           .build();

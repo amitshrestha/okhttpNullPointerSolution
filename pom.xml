@@ -20,7 +20,6 @@
 
   <modules>
     <module>okhttp</module>
-    <module>okhttp-tests</module>
 
     <module>okhttp-android-support</module>
 
@@ -34,9 +33,9 @@
     <module>okhttp-logging-interceptor</module>
 
     <module>okcurl</module>
-    <module>mockwebserver</module>
     <module>samples</module>
     <module>benchmarks</module>
+    <module>../../../../../Downloads/okio-master</module>
   </modules>
 
   <properties>

@@ -30,7 +30,8 @@ public final class RealResponseBody extends ResponseBody {
   }
 
   @Override public MediaType contentType() {
-    String contentType = headers.get("Content-Type");
+    // comp530 My Change
+    String contentType ="Content/Type";
     return contentType != null ? MediaType.parse(contentType) : null;
   }
 

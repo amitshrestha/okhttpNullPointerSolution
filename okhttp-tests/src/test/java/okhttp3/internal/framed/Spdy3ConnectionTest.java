@@ -340,7 +340,7 @@ public final class Spdy3ConnectionTest {
 
     // fake a settings frame with clear flag set.
     Settings settings2 = new Settings();
-    settings2.set(MAX_CONCURRENT_STREAMS, PERSIST_VALUE, 600);
+        settings2.set(MAX_CONCURRENT_STREAMS, PERSIST_VALUE, 600);
     connection.readerRunnable.settings(true, settings2);
 
     synchronized (connection) {
